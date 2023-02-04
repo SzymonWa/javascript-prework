@@ -1,7 +1,7 @@
-var argButtonName, buttonRock, buttonPaper, buttonScissors;
-buttonRock = document.getElementById('button-rock');
-buttonPaper= document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
+let argButtonName;
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper= document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 /**
  * Describe this function...
  */
@@ -9,7 +9,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
   function printMessage(msg){
-    var div = document.createElement('div');
+    let div = document.createElement('div');
     div.innerHTML = msg;
     document.getElementById('messages').appendChild(div);
   }
@@ -18,7 +18,7 @@ function buttonClicked(argButtonName) {
     document.getElementById('messages').innerHTML = '';
   }
   
-  var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+  let computerMove, playerMove, randomNumber;
   
   /**
    * Describe this function...
